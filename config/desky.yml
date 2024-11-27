@@ -246,7 +246,7 @@ script:
             lambda: 'return preset_num != 0;'
           then:
             - switch.turn_on: emit_noops
-            - delay: 2s
+            - delay: 15s
             - wait_until:
                 condition:
                   binary_sensor.is_off: desk_moving
